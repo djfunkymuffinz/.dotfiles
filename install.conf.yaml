@@ -4,3 +4,18 @@
     ~/.gitconfig: gitconfig
 
 
+- clean: ['~']
+
+- link:
+    ~/.bashrc: bashrc
+    ~/.vimrc: vimrc
+    ~/bin:
+        path: bin/
+        create: true
+    ~/.Xresources: Xresources
+    ~/.xinitrc: xinitrc
+    ~/.config/i3:
+        path: config/i3/
+        create: true
+
+
