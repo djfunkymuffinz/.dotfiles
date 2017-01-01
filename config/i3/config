@@ -125,3 +125,4 @@ bindsym $mod+e exec /usr/bin/dmenu_run
 #bindsym $mod+e exec rofi -show run -lines 3 -eh 1 -width 20 -m 0 -padding 20 -opacity "100" -bw 10 -hide scrollbar -separator-style "none" -bc "$text-color" -bg "$text-color" -fg "$border-unfocused" -hlbg "$border-unfocused" -hlfg "$text-color"
 
 bindsym $mod+w exec "wal -i $HOME/Pictures/Wallpapers -o wal-set"
+bindsym $mod+Shift+m exec "scrot -e 'mv $f ~/Pictures/Screenshots'"
