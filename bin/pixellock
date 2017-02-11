@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#
+# pixelated lock screen
+#
+
+scrot ~/tmp/lock/org.png
+convert -resize 10% ~/tmp/lock/org.png ~/tmp/lock/sml.png
+convert -resize 1000% ~/tmp/lock/sml.png ~/tmp/lock/pxl.png
+i3lock -i ~/tmp/lock/pxl.png
+rm ~/tmp/lock/*

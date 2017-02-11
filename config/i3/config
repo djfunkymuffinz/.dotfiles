@@ -81,7 +81,7 @@ bindsym $mod+Shift+J reload
 bindsym $mod+Shift+P restart
 bindsym $mod+Shift+greater exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-bindsym $mod+Shift+l exec i3lock -c 455A64
+bindsym $mod+Shift+l exec pixellock
 
 # Volume Control
 bindsym $mod+F10 exec amixer -q set Master toggle
@@ -125,4 +125,4 @@ bindsym $mod+e exec /usr/bin/dmenu_run
 #bindsym $mod+e exec rofi -show run -lines 3 -eh 1 -width 20 -m 0 -padding 20 -opacity "100" -bw 10 -hide scrollbar -separator-style "none" -bc "$text-color" -bg "$text-color" -fg "$border-unfocused" -hlbg "$border-unfocused" -hlfg "$text-color"
 
 bindsym $mod+w exec "wal -i $HOME/Pictures/Wallpapers -o wal-set"
-bindsym $mod+Shift+m exec "scrot -e 'mv $f ~/Pictures/Screenshots'"
+bindsym $mod+Shift+w exec "scrot -e 'mv $f ~/Pictures/Screenshots'"
